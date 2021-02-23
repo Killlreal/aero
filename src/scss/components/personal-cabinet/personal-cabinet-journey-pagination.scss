@@ -1,0 +1,27 @@
+.personal-cabinet-journey-pagination{
+    display: flex;
+    text-align: end;
+    justify-content: flex-end;
+
+    &__button{
+        background: #E9E9E9;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+        border-radius: 15px;
+        margin-left: 20px;
+    }
+
+    &__icon{
+        width: 20px;
+        height: 20px;
+    }
+}
+
+@media(max-width: 660px){
+    .personal-cabinet-journey-pagination{
+        display: flex;
+        justify-content: flex-end;
+        max-width: 280px;
+    }
+}

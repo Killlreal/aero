@@ -1,0 +1,63 @@
+@import 'service-item';
+.services{
+    max-width: $container-max-width;
+
+    &__headline{
+        @include main-headline;
+    }
+
+    &__slider{
+        .services__slider-row{
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            column-gap: 20px;
+        }
+    }
+
+    &__slider-controllers{
+        text-align: center;
+        margin-top: 40px;
+
+        .slider-controller{
+            @include slider-controller;
+            box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BDBDBD;
+        }
+
+        .slider-controller_chosen{
+            @include slider-controller;
+            box-shadow: inset 1px 1px 2px #BDBDBD, inset -2px -2px 2px #FFFFFF;
+        }
+    }
+
+    &__all{
+        @include all;
+        margin-top: 80px;
+    }
+}
+
+@media(max-width: $xl){
+    .services{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: $md){
+    .services{
+        &__slider{
+            .services__slider-row{
+                grid-template-columns: repeat(2, 1fr);
+            }    
+        }
+    }
+}
+
+@media(max-width: $sm){
+    .services{
+        &__slider{
+            .services__slider-row{
+                grid-template-columns: 1fr;
+                row-gap: 40px;
+            }    
+        }
+    }
+}

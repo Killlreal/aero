@@ -1,0 +1,10 @@
+.flights-time{
+
+    .flights-time__title{
+        @include datetime-title;
+    }
+
+    .flights-time__number{
+        @include datetime-day;
+    }
+}

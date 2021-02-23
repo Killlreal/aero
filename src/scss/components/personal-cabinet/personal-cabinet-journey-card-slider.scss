@@ -1,0 +1,20 @@
+@import "./personal-cabinet-journey-card-slider-item.scss";
+
+.personal-cabinet-journey-card-slider{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 20px;
+}
+
+@media(max-width: $md){
+    .personal-cabinet-journey-card-slider{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+    }
+}
+
+@media(max-width: 660px){
+    .personal-cabinet-journey-card-slider{
+        grid-template-columns: 1fr;
+    }
+}

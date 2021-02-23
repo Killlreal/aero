@@ -1,0 +1,8 @@
+@import "./detailed-flight-route-lines";
+@import "./detailed-flight-route-term";
+@import "./detailed-flight-route-time";
+@import "./detailed-flight-route-value";
+
+.detailed-flight-route{
+    display: flex;
+}

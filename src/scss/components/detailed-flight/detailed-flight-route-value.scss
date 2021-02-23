@@ -1,0 +1,10 @@
+.detailed-flight-route-value{
+    color: $dark-brown;
+    font: 1.5rem $main-bold;
+}
+
+@media(max-width: $sm){
+    .detailed-flight-route-value{
+        font: 1rem $main-bold;
+    }
+}

@@ -1,0 +1,19 @@
+@import "./personal-cabinet-journey-tabs.scss";
+@import "./personal-cabinet-journey-pagination.scss";
+@import "./personal-cabinet-journey-card-slider.scss";
+
+.personal-cabinet-journey{
+    
+}
+
+@media(max-width: $xl){
+    .personal-cabinet-journey{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: $sm){
+    .personal-cabinet-journey{
+        padding: 0;
+    }
+}

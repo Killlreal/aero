@@ -1,0 +1,45 @@
+.margin-auto{
+    margin: 0 auto;
+}
+
+.mr-80{
+    margin-right: 80px;
+}
+
+.mr-40{
+    margin-right: 40px;
+}
+
+.mr-30{
+    margin-right: 30px;
+}
+
+.mr-20{
+    margin-right: 20px;
+}
+
+.mt-10{
+    margin-top: 10px;
+}
+
+.mt-100{
+    margin-top: 100px;
+}
+
+.mt-40{
+    margin-top: 40px;
+}
+
+.mt-80{
+    margin-top: 80px;
+}
+
+.mt-15-pg{
+    margin-top: 15px;
+}
+
+@media(max-width: 660px){
+    .mt-15-pg{
+        margin: 15px auto;
+    }
+}

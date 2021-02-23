@@ -1,0 +1,53 @@
+@import "./flights-date";
+@import "./flights-time";
+@import "./flights-filter";
+
+.flights-hat{
+    display: flex;
+    justify-content: space-between;
+
+    &__filters{
+        display: flex;
+    }
+
+    &__datetime{
+        display: flex;
+    }
+}
+
+@media(max-width: $sm){
+    .flights-hat{
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 20px;
+        justify-items: center;
+        padding: 20px 0;
+
+        &__filters{
+            order: 2;
+        }
+
+        &__datetime{
+            order: 1;
+        }
+    }
+}
+
+@media(max-width: 420px){
+    .flights-hat{
+        .flights-hat__filters{
+            margin-right: 0;
+            justify-content: space-between;
+            width: 100%;
+
+            .flights-filter{
+                margin-right: 10;
+            }
+        }
+        
+        .flights-hat__datetime{
+            justify-content: space-between;
+            width: 100%
+        }
+    }
+}

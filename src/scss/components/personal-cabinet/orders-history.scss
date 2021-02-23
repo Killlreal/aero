@@ -1,0 +1,61 @@
+.orders-history{
+    background: #E9E9E9;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    box-sizing: border-box;
+    box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+    border-radius: 5px;
+    padding: 20px;
+
+    &__name{
+        color: $dark-brown;
+        font: 1.125rem $main-bold;
+    }
+
+    &__empty{
+        text-align: center;
+        margin-top: 40px;
+
+        &-icon{
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+    &__text{
+        color: $dark-brown;
+        font: 1rem $main-regular;
+        margin-top: 30px;
+        text-align: center;
+    }
+
+    &__button-container{
+        display: flex;
+        justify-content: center;
+        margin-top: 40px;
+
+        .orders-history__button{
+            @include button;
+            width: 280px;
+        }
+    }
+}
+
+@media(max-width: $md){
+    .orders-history{
+        &__button-container{
+            .orders-history__button{
+                width: 220px;
+            }
+        }
+    }
+}
+
+@media(max-width: 345px){
+    .orders-history{
+        &__button-container{
+            .orders-history__button{
+                width: 100%;
+            }
+        }
+    }
+}

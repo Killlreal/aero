@@ -1,0 +1,73 @@
+.flight-item-route{
+    align-items: center;
+
+    .flight-item-route__line{
+        width: 40px;
+        height: 1px;
+        margin: 0 10px;
+    }
+
+    .flight-item-route__minline{
+        width: 10px;
+        height: 1px;
+        margin: 0 10px;
+        display: none;
+    }
+
+    .flight-item-route__maxline{
+        width: 80px;
+        height: 1px;
+        margin: 0 10px;
+    }
+
+    .flight-item-route__plane{
+        width: 20px;
+        height: 16px;
+    }
+}
+
+.flight-item-status_not-departed{
+    @include flight-item-status($red);
+}
+
+.flight-item-status_pre-flight{
+    @include flight-item-status($dark-brown);
+}
+
+.flight-item-status_departed{
+    @include flight-item-status($green);
+}
+
+.flight-item-detail-icon{
+    width: 20px;
+    height: 20px;
+}
+
+
+@media(max-width: $xl){
+}
+
+@media(max-width: 811px){
+
+}
+
+@media(max-width: $md){
+}
+
+@media(max-width: $sm){
+    .flight-item-route{
+        .flight-item-route__line{
+            display: none;
+        }
+        .flight-item-route__minline{
+            display: none;
+        }
+
+        .flight-item-route__plane{
+            margin: 0 10px;
+        }
+    }
+}
+
+@media(max-width: 420px){
+}

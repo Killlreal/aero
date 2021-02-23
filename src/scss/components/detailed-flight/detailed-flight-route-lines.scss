@@ -1,0 +1,40 @@
+.detailed-flight-route-lines{
+    display: flex;
+    align-items: center;
+    
+    &__maxline{
+        width: 80px;
+        height: 1px;
+        margin: 0 10px;
+    }
+
+    &__minline{
+        width: 10px;
+        height: 1px;
+        margin: 0 10px;
+        display: none;
+    }
+
+    &__plane{
+        width: 20px;
+        height: 16px;
+    }
+}
+
+@media(max-width: $sm){
+    .detailed-flight-route-lines{
+        &__maxline{
+            display: none;
+        }
+    
+        &__minline{
+            display: flex;
+            margin-bottom: 8px;
+        }
+
+        &__plane{
+            margin-bottom: 8px;
+        }
+
+    }
+}

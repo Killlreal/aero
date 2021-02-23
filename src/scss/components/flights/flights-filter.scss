@@ -1,0 +1,7 @@
+.flights-filter{
+    @include flights-filter($dark-brown, none);
+
+    &_active{
+    	@include flights-filter($light-blue, 3px solid $light-blue);
+    }
+}

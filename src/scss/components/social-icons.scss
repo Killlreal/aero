@@ -1,0 +1,21 @@
+.social-icons{
+    display: flex;
+    justify-content: center;
+
+    .social-icons__icon-container{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 30px;
+        width: 30px;
+        background: $light-grey;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+        border-radius: 50%;
+
+        .social-icons__icon{
+            height: 20px;
+            width: 20px;
+        }
+    }
+}

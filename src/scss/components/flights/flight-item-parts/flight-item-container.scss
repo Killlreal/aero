@@ -1,0 +1,30 @@
+@import "./flight-item-key";
+@import "./flight-item-value";
+@import "./flight-item-elements";
+
+.flight-item-container{
+    display: flex;
+    align-items: center;
+}
+
+.flight-item-container__part{
+    margin-right: 10px;
+}
+
+.flight-item-container__part:last-child{
+    margin-right: 0;
+    justify-content: flex-end;
+}
+
+@media(max-width: 1265px){
+    .flight-item-container__part:last-child{
+        justify-content: flex-start;
+    }
+}
+
+@media(max-width: $lg){
+    .flight-item-container__part{
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+}

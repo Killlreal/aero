@@ -1,0 +1,19 @@
+.search-input{
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    background: $light-grey;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+
+    .search-input__placeholder{
+        font: 1rem/1.25rem $main-bold;
+        color: $dark-brown;
+    }
+
+    .search-input__icon{
+        width: 20px;
+        height: 20px;
+    }
+}

@@ -1,0 +1,48 @@
+.service-item{
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    column-gap: 20px;
+    align-items: center;
+    height: 140px;
+    padding:15px;
+    border: 1px solid rgba(255, 255, 255, .2);
+    border-radius: 5px;
+    box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+
+    .service-item__icon{
+        width: 80px;
+        height: 80px;
+    }
+
+    .service-item__title{
+        @include service-item-title($dark-brown, initial)
+    }
+
+    .service-item__title_chosen{
+        @include service-item-title($light-blue, uppercase)
+    }
+}
+
+@media(max-width: 1015px){
+    .service-item{
+        grid-template-columns: 1fr;
+        grid-template-rows: 80px auto;
+        justify-items: center;
+        align-items: flex-start;
+        row-gap: 20px;
+        height: auto;
+
+        .service-item__title{
+            text-align: center;
+        }
+    }
+}
+
+@media(max-width: $md){
+    .service-item{
+        grid-template-columns: 80px 1fr;
+        grid-template-rows: auto;
+        align-items: center;
+        height: 140px;
+    }
+}

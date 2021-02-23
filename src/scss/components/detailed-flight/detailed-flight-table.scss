@@ -1,0 +1,39 @@
+.detailed-flight-table{
+    display: grid;
+
+    &__hat{
+        padding: 20px 0;
+        display: flex;
+        border-bottom: 1px dashed $dark-brown;
+
+        &-container{
+            margin-right: 80px;
+        }
+
+        &-container:last-child{
+            margin-right: 0;
+        }
+    }
+
+    &__item{
+        padding: 20px 0;
+        border-bottom: 1px dashed $dark-brown;
+        .table-indicator{
+
+        }
+    }
+}
+
+@media(max-width: $lg){
+    .detailed-flight-table{
+        &__hat{
+            flex-flow: wrap;
+            padding-top: 10px;
+
+            &-container{
+                margin-top: 10;
+            }
+        }
+    }
+}
+

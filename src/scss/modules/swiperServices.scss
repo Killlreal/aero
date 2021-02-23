@@ -1,0 +1,25 @@
+.swiper-container{
+
+    .swiper-wrapper{
+        height: auto;
+    }
+
+    .swiper-pagination{
+        margin-bottom: 60px;
+    }
+
+    .swiper-pagination-bullets{
+        bottom: 40px;
+
+        .swiper-pagination-bullet{
+            @include slider-controller;
+            box-shadow: -1px -1px 2px #FFFFFF, 1px 1px 2px #BDBDBD;
+            margin-right: 20px;
+        }
+
+        .swiper-pagination-bullet-active {
+            @include slider-controller;
+            box-shadow: inset 1px 1px 2px #BDBDBD, inset -2px -2px 2px #FFFFFF;
+        }
+    }
+}

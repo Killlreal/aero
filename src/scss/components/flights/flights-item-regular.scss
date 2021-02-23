@@ -1,0 +1,65 @@
+@import "./flights-item-regular__elements";
+
+.flights-item-regular{
+    display: grid;
+    grid-template-rows: 40px 40px 40px;
+    border-top: 1px dashed $dark-brown;
+
+    .flights-item-regular-row{
+        display: grid;
+        align-items: center;
+        grid-template-columns: 0.35fr 0.3fr 0.4fr 1fr;
+    }
+}
+
+@media(max-width: $xl){
+    .flights-item-regular{
+        .flights-item-regular-row{
+            grid-template-columns: 0.5fr 0.4fr 0.5fr 1fr;
+        }
+    }
+}
+
+@media(max-width: $lg){
+    .flights-item-regular{
+        .flights-item-regular-row{
+            grid-template-columns: 1fr 0.8fr 1fr 0.8fr;
+        }
+    }
+}
+
+@media(max-width: $md){
+    .flights-item-regular{
+        .flights-item-regular-row{
+            grid-template-columns: 1fr 0.8fr 1fr 0.8fr;
+            flex-wrap: wrap;
+        }
+
+        .flights-item-regular-row:first-child{
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
+
+@media(max-width: 639px){
+    .flights-item-regular{
+        display: block;
+    }
+}
+
+@media(max-width: $sm){
+    .flights-item-regular{
+        .flights-item-regular-row{
+            grid-template-columns: 1fr;
+        }
+
+        .flights-item-regular-row:last-child{
+            grid-template-columns: 1fr 1.5fr;
+        }
+
+        .flights-item-regular-row:first-child{
+            display: block;
+        }
+    }
+}

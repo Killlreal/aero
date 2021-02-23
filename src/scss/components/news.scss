@@ -1,0 +1,46 @@
+@import 'news-item';
+.news{
+    max-width: $container-max-width;
+
+    &__headline{
+        @include main-headline;
+    }
+
+    &__main-news{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        column-gap: 20px;
+    }
+
+    &__all{
+        @include all;
+        margin-bottom: 40px;
+    }
+}
+
+@media(max-width: $xl){
+    .news{
+        padding: 0 20px;
+    }
+}
+
+@media(max-width: $lg){
+    .news{
+        &__main-news{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+        }
+    }
+}
+
+@media(max-width: $sm){
+    .news{
+        &__main-news{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+}
+

@@ -1,0 +1,12 @@
+.detailed-flight-route-term{
+    display: grid;
+    grid-template-rows: 30px 30px;
+    row-gap: 5px;
+    justify-items: center;
+}
+
+@media(max-width: $sm){
+    .detailed-flight-route-term{
+        row-gap: 0;
+    }
+}

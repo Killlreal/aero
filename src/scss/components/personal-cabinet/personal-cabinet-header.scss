@@ -1,0 +1,44 @@
+.personal-cabinet-header{
+    display: flex;
+    justify-content: space-between;
+    
+    &__title{
+        @include main-headline;
+        margin: 0;
+    }
+
+    &__exit{
+        display: flex;
+        align-items: center;
+    }
+
+    &__exit-text{
+        font: 1.125rem $main-bold;
+        color: $dark-brown;
+        margin-right: 10px;
+    }
+
+    &__exit-icon{
+        width: 30px;
+        height: 30px;
+        padding: 7px;
+        border-radius: 50%;
+        background-color: #e9e9e9;
+        border: 1px solid rgba(255, 255, 255, .2);
+        box-sizing: border-box;
+        box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+
+        use{
+            width: 16px;
+            height: 16px;
+        }
+    }
+}
+
+@media(max-width: $md){
+    .personal-cabinet-header{
+        &__exit-text{
+            display: none;
+        }
+    }
+}

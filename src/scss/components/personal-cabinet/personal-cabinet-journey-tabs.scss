@@ -1,0 +1,54 @@
+.personal-cabinet-journey-tabs{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 0 20px;
+    text-align: center;
+
+    &__tab{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font: 1.125rem $main-bold;
+        width: 100%;
+        padding: 18px 0;
+        color: $dark-brown;
+        background-color: $light-grey;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-sizing: border-box;
+        box-shadow: 6px 6px 16px rgba(189, 189, 189, 0.5), -6px -6px 16px rgba(255, 255, 255, 0.5);
+        border-radius: 5px;
+    }
+
+    &__tab_active{
+        @extend .personal-cabinet-journey-tabs__tab;
+        color: $light-blue;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        box-shadow: -6px -6px 16px rgba(255, 255, 255, 0.5), inset 6px 6px 16px rgba(189, 189, 189, 0.5);
+    }
+}
+
+@media(max-width: $md){
+    .personal-cabinet-journey-tabs{
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media(max-width: 660px){
+    .personal-cabinet-journey-tabs{
+        grid-template-columns: 1fr;
+        row-gap: 20px;
+        justify-items: center;
+
+        &__tab{
+            max-width: 280px;
+        }
+    }
+}
+
+@media(max-width: $sm){
+    .personal-cabinet-journey-tabs{
+        &__tab{
+            max-width: 100%;
+        }
+    }
+}

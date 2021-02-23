@@ -1,0 +1,29 @@
+@import "./flights-hat";
+@import "./flights-item";
+@import "./flights-item-regular";
+
+.flights-board{
+    max-width: $container-max-width;
+
+    &__headline{
+        @include main-headline;
+    }
+
+    &__table{
+        @include flights-board__table(40px);      
+    }
+
+    &__table-regular{
+        @include flights-board__table(20px);
+    }
+
+    &__all{
+        @include all;
+    }
+}
+
+@media(max-width: $xl){
+    .flights-board{
+        padding: 0 20px;
+    }
+}

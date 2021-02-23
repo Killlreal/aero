@@ -1,0 +1,21 @@
+.flights-date{
+
+    .flights-date__title{
+        @include datetime-title;
+    }
+
+    .flights-date__content{
+        display: flex;
+        align-items: center;
+
+        .flights-date__day{
+            @include datetime-day;
+            margin-right: 5px;
+        }
+
+        .flights-date__icon{
+            width: 10px;
+            height: 10px;
+        }
+    }
+}
